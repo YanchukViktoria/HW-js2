@@ -1,0 +1,699 @@
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 1000px;
+}
+.container-shop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: _;
+          flex-direction: _;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: _;
+  -ms-flex-wrap: _;
+      flex-wrap: _;
+}
+.container-game {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: _;
+          flex-direction: _;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 110px;
+  -ms-flex-wrap: _;
+      flex-wrap: _;
+}
+
+body {
+  font-family: Montserrat Alternates;
+}
+
+.section-calculator {
+  padding: 100px 0;
+  background: rgba(241, 212, 142, 0.3);
+}
+
+.calc-desc {
+  background-color: rgb(196, 222, 157);
+  width: 500px;
+  height: 90px;
+  font-weight: 600;
+  font-size: 36px;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 24px;
+  padding: 25px;
+  min-width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: _;
+          flex-direction: _;
+  -webkit-box-pack: _;
+      -ms-flex-pack: _;
+          justify-content: _;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: _;
+  -ms-flex-wrap: _;
+      flex-wrap: _;
+}
+
+.calc-wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: _;
+          flex-direction: _;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: _;
+      -ms-flex-align: _;
+          align-items: _;
+  gap: _;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.section-game {
+  padding: 100px 0;
+  background: rgba(164, 191, 92, 0.3);
+}
+
+.game-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: _;
+      -ms-flex-pack: _;
+          justify-content: _;
+  -webkit-box-align: _;
+      -ms-flex-align: _;
+          align-items: _;
+  gap: 40px;
+  -ms-flex-wrap: _;
+      flex-wrap: _;
+}
+
+.game-container {
+  max-width: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: _;
+          flex-direction: _;
+  -webkit-box-pack: _;
+      -ms-flex-pack: _;
+          justify-content: _;
+  -webkit-box-align: _;
+      -ms-flex-align: _;
+          align-items: _;
+  gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.game-div {
+  border-radius: 24px;
+  min-width: 30px;
+}
+.game-div-first {
+  background: linear-gradient(222deg, rgb(241, 125, 84) 0%, rgb(216, 87, 63) 100%);
+  border: 2px solid rgb(216, 87, 63);
+  position: relative;
+  height: 20px;
+}
+.game-div-first::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 30px;
+  background-color: rgb(241, 125, 84);
+  z-index: -1;
+  border-radius: 24px;
+  top: -7px;
+  left: -7px;
+}
+.game-div-sec {
+  background: linear-gradient(222deg, rgb(130, 205, 192) 0%, rgb(164, 191, 92) 100%);
+  border: 2px solid rgb(164, 191, 92);
+  position: relative;
+  height: 20px;
+}
+.game-div-sec::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 400px;
+  height: 30px;
+  background-color: rgb(130, 205, 192);
+  z-index: -1;
+  border-radius: 24px;
+  top: -7px;
+  left: -7px;
+}
+
+.header {
+  padding: 33px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.section-shop {
+  padding: 100px 0;
+  background-color: rgba(210, 209, 91, 0.3);
+}
+
+.shop-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: _;
+          flex-direction: _;
+  -webkit-box-pack: _;
+      -ms-flex-pack: _;
+          justify-content: _;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 346px;
+}
+
+.shop-container {
+  position: relative;
+  background: linear-gradient(222deg, rgb(210, 209, 91) 0%, rgb(79, 183, 191) 100%);
+  padding: 12px 25px;
+  border-radius: 24px;
+  min-width: 318px;
+}
+
+.shop-title {
+  font-weight: 600;
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 41px;
+}
+
+.shop-price {
+  font-weight: 600;
+  font-size: 36px;
+  color: rgb(255, 255, 255);
+  text-align: right;
+  position: absolute;
+  right: 25px;
+  bottom: 45px;
+}
+
+.shop-desc {
+  text-align: right;
+  font-weight: 500;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  padding-top: 13px;
+  position: relative;
+}
+.shop-desc::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  width: 203px;
+}
+.shop-desc-input {
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: _;
+          flex-direction: _;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  -ms-flex-wrap: _;
+      flex-wrap: _;
+}
+
+.shop-input[type=checkbox] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: rgb(77, 184, 192);
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+.shop-input[type=checkbox]:checked::after {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 2px;
+  width: 6px;
+  height: 12px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.svg {
+  fill: currentColor;
+}
+
+.section-temperature {
+  padding: 200px 0 100px 0;
+  background-color: rgba(203, 221, 227, 0.3);
+}
+
+.temperature-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: _;
+          flex-direction: _;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+  -ms-flex-wrap: _;
+      flex-wrap: _;
+  margin-bottom: 40px;
+}
+
+.temperature-input {
+  border: none;
+  border-radius: 24px;
+  padding: 25px;
+  min-width: 400px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+}
+.temperature-input-first {
+  background: linear-gradient(222deg, rgb(202, 222, 227) 0%, rgb(1, 66, 113) 100%);
+}
+.temperature-input-sec {
+  background: linear-gradient(222deg, rgb(141, 195, 211) 0%, rgb(202, 222, 227) 100%);
+}
+.temperature-input:focus-within {
+  outline: none;
+}
+.temperature-input::-webkit-input-placeholder {
+  color: rgb(255, 255, 255);
+}
+.temperature-input::-moz-placeholder {
+  color: rgb(255, 255, 255);
+}
+.temperature-input:-ms-input-placeholder {
+  color: rgb(255, 255, 255);
+}
+.temperature-input::-ms-input-placeholder {
+  color: rgb(255, 255, 255);
+}
+.temperature-input::placeholder {
+  color: rgb(255, 255, 255);
+}
+
+.temperature-select {
+  background: rgb(202, 222, 227);
+  border: none;
+  padding: 25px;
+  border-radius: 42px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+}
+.temperature-select:focus-within {
+  outline: none;
+}
+
+.section-time {
+  padding: 100px 0;
+  background-color: rgba(106, 187, 190, 0.3);
+}
+
+.time-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: _;
+          flex-direction: _;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+  -ms-flex-wrap: _;
+      flex-wrap: _;
+  margin-bottom: 40px;
+}
+
+.time-input {
+  border: none;
+  border-radius: 24px;
+  padding: 25px;
+  min-width: 400px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+}
+.time-input-first {
+  background: linear-gradient(111deg, rgb(3, 144, 151) 0%, rgb(98, 191, 192) 100%);
+}
+.time-input-sec {
+  background: linear-gradient(111deg, rgb(98, 191, 192) 0%, rgb(3, 88, 85) 100%);
+}
+.time-input:focus-within {
+  outline: none;
+}
+.time-input::-webkit-input-placeholder {
+  color: rgb(255, 255, 255);
+}
+.time-input::-moz-placeholder {
+  color: rgb(255, 255, 255);
+}
+.time-input:-ms-input-placeholder {
+  color: rgb(255, 255, 255);
+}
+.time-input::-ms-input-placeholder {
+  color: rgb(255, 255, 255);
+}
+.time-input::placeholder {
+  color: rgb(255, 255, 255);
+}
+
+.time-select {
+  background: rgb(98, 191, 192);
+  border: none;
+  padding: 25px;
+  border-radius: 42px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+}
+.time-select:focus-within {
+  outline: none;
+}
+
+.nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: _;
+          flex-direction: _;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 33px;
+  -ms-flex-wrap: _;
+      flex-wrap: _;
+}
+.nav-list-link {
+  font-weight: 600;
+  color: rgb(2, 25, 69);
+}
+
+.temperature-btn {
+  margin: 0 auto;
+  display: block;
+  background: linear-gradient(222deg, rgb(0, 65, 117) 0%, rgb(3, 131, 179) 100%);
+  color: rgb(255, 255, 255);
+  padding: 20px 45px;
+  border-radius: 24px;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.time-btn {
+  margin: 0 auto;
+  display: block;
+  background: linear-gradient(222deg, rgb(126, 111, 153) 0%, rgb(101, 183, 188) 100%);
+  color: rgb(255, 255, 255);
+  padding: 20px 45px;
+  border-radius: 24px;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.game-btn {
+  border-radius: 24px;
+  padding: 10px 20px;
+  color: rgb(255, 255, 255);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: _;
+          flex-direction: _;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: _;
+  -ms-flex-wrap: _;
+      flex-wrap: _;
+}
+.game-btn-first {
+  background: linear-gradient(222deg, rgb(164, 191, 93) 0%, rgb(241, 125, 84) 100%);
+}
+.game-btn-sec {
+  background: linear-gradient(222deg, rgb(164, 191, 93) 0%, rgb(130, 205, 192) 100%);
+}
+.game-btn-third {
+  background: linear-gradient(222deg, rgb(238, 185, 107) 0%, rgb(130, 205, 192) 100%);
+}
+.game-btn-fourth {
+  background: linear-gradient(222deg, rgb(238, 185, 107) 0%, rgb(216, 87, 63) 100%);
+}
+
+.shop-btn {
+  border-radius: 24px;
+  padding: 10px 20px;
+  color: rgb(255, 255, 255);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: _;
+          flex-direction: _;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: _;
+  -ms-flex-wrap: _;
+      flex-wrap: _;
+}
+.shop-btn-first {
+  background: rgb(28, 76, 85);
+}
+.shop-btn-sec {
+  background: rgb(29, 53, 0);
+}
+.shop-btn-third {
+  background: rgb(210, 209, 91);
+}
+.shop-btn-fourth {
+  background: linear-gradient(222deg, rgb(155, 156, 6) 0%, rgb(29, 53, 0) 100%);
+}
+.shop-btn-fifth {
+  background: rgb(77, 184, 192);
+}
+.shop-btn-sixth {
+  background: rgb(116, 155, 10);
+}
+.shop-btn-seventh {
+  background: linear-gradient(222deg, rgb(210, 208, 90) 0%, rgb(77, 184, 190) 100%);
+}
+.shop-btn-eighth {
+  background: linear-gradient(222deg, rgb(28, 76, 85) 0%, rgb(210, 208, 90) 100%);
+}
+.shop-btn-count {
+  font-weight: 600;
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  padding: 12px 40px;
+  background: rgb(77, 184, 192);
+  margin-bottom: 20px;
+}
+
+.calc-btn {
+  font-weight: 600;
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  border-radius: 24px;
+  margin: 10px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: _;
+          flex-direction: _;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: _;
+  -ms-flex-wrap: _;
+      flex-wrap: _;
+  padding: 20px 50px;
+}
+.calc-btn-first {
+  background-color: rgb(194, 164, 205);
+}
+.calc-btn-sec {
+  background: rgb(194, 164, 205);
+}
+.calc-btn-third {
+  background: rgb(194, 164, 205);
+}
+.calc-btn-fourth {
+  background: rgb(194, 164, 205);
+}
+.calc-btn-fifth {
+  background: rgb(194, 164, 205);
+}
+.calc-btn-sixth {
+  background: rgb(194, 164, 205);
+}
+.calc-btn-seventh {
+  background: rgb(194, 164, 205);
+}
+.calc-btn-eighth {
+  background: rgb(194, 164, 205);
+}
+.calc-btn-nineth {
+  background: rgb(194, 164, 205);
+}
+.calc-btn-plus {
+  background: linear-gradient(222deg, rgb(196, 222, 158) 0%, rgb(241, 212, 142) 100%);
+}
+.calc-btn-minus {
+  background: rgb(241, 212, 142);
+}
+.calc-btn-multyply {
+  background: linear-gradient(222deg, rgb(235, 133, 115) 0%, rgb(241, 212, 142) 100%);
+}
+.calc-btn-round {
+  background: rgb(127, 217, 194);
+}
+.calc-btn-enter {
+  background: linear-gradient(222deg, rgb(196, 222, 158) 0%, rgb(241, 212, 142) 100%);
+}
+.calc-btn-diving {
+  background: rgb(235, 133, 115);
+}
+.calc-btn-decrimal {
+  background: linear-gradient(222deg, rgb(196, 222, 158) 0%, rgb(127, 217, 194) 100%);
+  margin: 0 10px;
+}
+.calc-btn-sqr {
+  background: rgb(194, 164, 205);
+  margin: 0 10px;
+}
+.calc-btn-string {
+  background: rgb(194, 164, 205);
+  margin: 10px;
+}
+.calc-btn-C {
+  background: rgb(127, 217, 194);
+}/*# sourceMappingURL=main.css.map */

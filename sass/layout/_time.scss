@@ -1,0 +1,49 @@
+.section-time{
+    padding: 100px 0;
+    background-color: $time-bg;
+}
+
+.time-wrap{
+    @include positioning(flex, _, center, center, 50px, _);
+    margin-bottom: 40px;
+}
+
+.time-input{
+    border: none;
+    border-radius: 24px;
+    padding: 25px;
+    min-width: 400px;
+
+    font-weight: 500;
+    color: $main-white;
+
+    &-first{
+        background: $time-left-gradient;
+    }
+
+    &-sec{
+        background: $time-right-gradient;
+    }
+
+    &:focus-within{
+        outline: none;
+    }
+
+    &::placeholder{
+        color: $main-white;
+    }
+}
+
+.time-select{
+    background: $time-select;
+    border: none;
+    padding: 25px;
+    border-radius: 42px;
+
+    font-weight: 500;
+    color: $main-white;
+
+    &:focus-within{
+        outline: none;
+    }
+}

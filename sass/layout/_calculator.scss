@@ -1,0 +1,25 @@
+.section-calculator{
+    padding: 100px 0;
+    background: $calc-bg;
+}
+
+
+.calc-desc{
+    background-color: $calc-btn-1;
+    width: 500px;
+    height: 90px;
+    font-weight: 600;
+    font-size: 36px;
+    color: $main-white;
+    border: none;
+    border-radius: 24px;
+    padding: 25px;
+    min-width: 500px;
+    @include positioning(flex, _, _, center, _, _);
+}
+
+.calc-wraper{
+    @include positioning(flex, _, flex-start, _, _, wrap);
+    max-width: 500px;
+    margin: 0 auto;
+}

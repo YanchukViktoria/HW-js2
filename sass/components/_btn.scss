@@ -1,0 +1,184 @@
+.temperature-btn{
+    margin: 0 auto;
+    display: block;
+    background: $temp-btn-gradient;
+    color: $main-white;
+    padding: 20px 45px;
+    border-radius: 24px;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.time-btn{
+    margin: 0 auto;
+    display: block;
+    background: $time-btn-gradient;
+    color: $main-white;
+    padding: 20px 45px;
+    border-radius: 24px;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.game-btn{
+    border-radius: 24px;
+    padding: 10px 20px;
+    color: $main-white;
+    @include positioning(flex, _, center, center, _, _);
+
+    &-first{
+        background: $game-btn-1;
+    }
+
+    &-sec{
+        background: $game-btn-2;
+    }
+
+    &-third{
+       background: $game-btn-3; 
+    }
+
+    &-fourth{
+        background: $game-btn-4;
+    }
+}
+
+.shop-btn{
+    border-radius: 24px;
+    padding: 10px 20px;
+    color: $main-white;
+    @include positioning(flex, _, center, center, _, _);
+
+    &-first{
+        background: $shop-btn-first;
+    }
+
+    &-sec{
+        background: $shop-btn-sec;
+    }
+
+    &-third{
+       background: $shop-btn-fifth; 
+    }
+
+    &-fourth{
+        background: $shop-btn-gradient-sec;
+    }
+
+    &-fifth{
+        background: $shop-btn-third;
+    }
+
+    &-sixth{
+        background: $shop-btn-fourth;
+    }
+
+    &-seventh{
+        background: $shop-btn-and-gradient;
+    }
+
+    &-eighth{
+        background: $shop-btn-gradient-first;
+    }
+
+
+    &-count{
+        font-weight: 600;
+        font-size: 24px;
+        color: $main-white;
+        padding: 12px 40px;
+        background: $shop-btn-third;
+        margin-bottom: 20px;
+    }
+}
+
+.calc-btn{
+    font-weight: 600;
+    font-size: 24px;
+    color: $main-white;
+    border-radius: 24px;
+    margin: 10px auto;
+    @include positioning(flex, _, center, center, _, _);
+    padding: 20px 50px;
+
+    &-first{
+        background-color: $calc-btn-2;
+    }
+
+    &-sec{
+        background: $calc-btn-2;
+    }
+
+    &-third{
+        background: $calc-btn-2;
+    }
+
+    &-fourth{
+        background: $calc-btn-2;
+    }
+
+    &-fifth{
+        background: $calc-btn-2;
+    }
+
+    &-sixth{
+        background: $calc-btn-2;
+    }
+
+    &-seventh{
+        background: $calc-btn-2;
+    }
+
+    &-eighth{
+        background: $calc-btn-2;
+    }
+
+    &-nineth{
+        background: $calc-btn-2;
+    }
+
+    &-plus{
+        background: $calc-btn-6;
+    }
+
+    &-minus{
+        background: $calc-btn-5;
+    }
+
+    &-multyply{
+        background: $calc-btn-7; 
+    }
+
+    &-round{
+        background: $calc-btn-3;
+    }
+
+    &-enter{
+        background: $calc-btn-6;
+    }
+
+    &-diving{
+        background: $calc-btn-9; 
+
+    }
+
+    &-decrimal{
+        background: $calc-btn-8;
+        margin: 0 10px;
+    }
+
+    &-sqr{
+        background: $calc-btn-2;
+        margin: 0 10px;
+    }
+
+    &-string{
+        background: $calc-btn-2;
+        margin: 10px;
+    }
+
+    &-C{
+        background: $calc-btn-3;
+    }
+
+}

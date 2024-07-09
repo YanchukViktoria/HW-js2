@@ -1,0 +1,57 @@
+.section-game{
+    padding: 100px 0;
+    background: $gme-bg;
+}
+
+.game-wrapper{
+    @include positioning(flex, column, _, _, 40px, _);
+}   
+
+.game-container{
+    max-width: 160px;
+    @include positioning(flex, _, _, _, 20px, wrap);
+}
+
+.game-div {
+    border-radius: 24px;
+    min-width: 30px;
+
+    &-first{
+        background: $game-top-gradient;
+        border: 2px solid $game-br-red;
+        position: relative;
+        height: 20px;
+
+        &::before{
+            content: "";
+            position: absolute;
+            width: 400px;
+            height: 30px;
+            background-color: $game-tomato;
+            z-index: -1;
+            border-radius: 24px;
+            top: -7px;
+            left: -7px;
+        }
+    }
+
+    &-sec{
+        background: $game-bott-gradient;
+        border: 2px solid $game-br-green;
+        position: relative;
+        height: 20px;
+
+        &::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 400px;
+            height: 30px;
+            background-color: $game-blue;
+            z-index: -1;
+            border-radius: 24px;
+            top: -7px;
+            left: -7px;
+        }
+    }
+  }

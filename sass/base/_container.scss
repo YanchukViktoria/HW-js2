@@ -1,0 +1,13 @@
+.container{
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 1000px;
+
+    &-shop{
+        @include positioning(flex, _, space-between, center, _, _);
+    }
+
+    &-game{
+        @include positioning(flex, _, space-between, center, 110px, _);
+    }
+}

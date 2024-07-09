@@ -1,0 +1,8 @@
+.nav-list{
+    @include positioning(flex, _, center, center, 33px, _);
+
+    &-link{
+        font-weight: 600;
+        color: $nav;
+    }
+}

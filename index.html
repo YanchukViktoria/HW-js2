@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-list-item"><a href="#temperature" class="nav-list-link">Task-1</a></li>
+                    <li class="nav-list-item"><a href="#time" class="nav-list-link">Task-2</a></li>
+                    <li class="nav-list-item"><a href="#game" class="nav-list-link">Task-3</a></li>
+                    <li class="nav-list-item"><a href="#shop" class="nav-list-link">Task-4</a></li>
+                    <li class="nav-list-item"><a href="#calculator" class="nav-list-link">Task-5-9</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="section-temperature" id="temperature">
+            <div class="container">
+                <div class="temperature-wrap">
+                    <input class="temperature-input temperature-input-first" id="temperature-input-first" type="text" placeholder="°C">
+                    <select class="temperature-select" name="value" id="temperature-select">
+                        <option value="Fahrenheit ">Fahrenheit</option>
+                        <option value="kelvins">kelvins</option>
+                    </select>
+                    <input class="temperature-input temperature-input-sec" id="temperature-input-sec" type="text">
+                </div>
+                <button class="temperature-btn" id="temperature-btn">Convert</button>
+            </div>
+        </section>
+        <section class="section-time" id="time">
+            <div class="container">
+                <div class="time-wrap">
+                    <input class="time-input time-input-first" id="time-input-first" type="text" placeholder="days">
+                    <select class="time-select" name="" id="time-select">
+                        <option value="Hours">Hours</option>
+                        <option value="Minutes">Minutes</option>
+                        <option value="Seconds">Seconds</option>
+                    </select>
+                    <input class="time-input time-input-sec" id="time-input-sec" type="text">
+                </div>
+                <button class="time-btn" id="time-btn">Convert</button>
+            </div>
+            </div>
+        </section>
+        <section class="section-game" id="game">
+            <div class="container container-game">
+                <div class="game-wrapper">
+                    <div class="game-div game-div-first" id="game-div-first"></div>
+                    <div class="game-div game-div-sec" id="game-div-sec"></div>
+                </div>
+                <div class="game-container">
+                    <button class="game-btn game-btn-first" id="game-btn-first">
+                        <svg class="svg" width="30" height="30">
+                            <use href="./symbol-defs.svg#lightning"></use>
+                        </svg>
+                    </button>
+                    <button class="game-btn game-btn-sec" id="game-btn-sec">
+                        <svg class="svg" width="30" height="30">
+                            <use href="./symbol-defs.svg#heart"></use>
+                        </svg>
+                    </button>
+                    <button class="game-btn game-btn-third" id="game-btn-third">
+                        <svg class="svg" width="30" height="30">
+                            <use href="./symbol-defs.svg#katana"></use>
+                        </svg>
+                    </button>
+                    <button class="game-btn game-btn-fourth" id="game-btn-fourth">
+                        <svg class="svg" width="30" height="30">
+                            <use href="./symbol-defs.svg#shield"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="section-shop" id="shop">
+            <div class="container container-shop">
+                <div class="shop-wrapper">
+                    <button class="shop-btn shop-btn-first" id="shop-btn-first">
+                        <svg class="svg" width="30" height="30">
+                            <use href="./symbol-defs.svg#turkey"></use>
+                        </svg>
+                    </button>
+                    <button class="shop-btn shop-btn-sec" id="shop-btn-sec">
+                        <svg class="svg" width="30" height="30">
+                            <use href="./symbol-defs.svg#bread"></use>
+                        </svg>
+                    </button>
+                    <button class="shop-btn shop-btn-third" id="shop-btn-third">
+                        <svg class="svg" width="30" height="30">
+                            <use href="./symbol-defs.svg#lemon"></use>
+                        </svg>
+                    </button>
+                    <button class="shop-btn shop-btn-fourth" id="shop-btn-fourth">
+                        <svg class="svg" width="30" height="30">
+                            <use href="./symbol-defs.svg#cookies"></use>
+                        </svg>
+                    </button>
+                    <button class="shop-btn shop-btn-fifth" id="shop-btn-fifth">
+                        <svg class="svg" width="30" height="30">
+                            <use href="./symbol-defs.svg#beer"></use>
+                        </svg>
+                    </button>
+                    <button class="shop-btn shop-btn-sixth" id="shop-btn-sixth">
+                        <svg class="svg" width="30" height="30">
+                            <use href="./symbol-defs.svg#avocado"></use>
+                        </svg>
+                    </button>
+                    <button class="shop-btn shop-btn-seventh" id="shop-btn-seventh">
+                        <svg class="svg" width="30" height="30">
+                            <use href="./symbol-defs.svg#pizza"></use>
+                        </svg>
+                    </button>
+                    <button class="shop-btn shop-btn-eighth" id="shop-btn-eighth">
+                        <svg class="svg" width="30" height="30">
+                            <use href="./symbol-defs.svg#banana"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="shop-container">
+                    <p class="shop-title">Total</p>
+                    <p class="shop-price" id="shop-price">0</p>
+                    <p class="shop-desc" id="shop-desc"></p>
+                </div>
+                <div class="shop-container-count">
+                    <button class="shop-btn shop-btn-count" id="shop-btn-count">Count</button>
+                    <p class="shop-desc-input"><input class="shop-input" id="shop-input" type="checkbox"> Count with a discount</p>
+                </div>
+            </div>
+        </section>
+        <section class="section-calculator" id="calcualtor">
+            <div class="container">
+                <div class="calc-wraper">
+                    <p class="calc-desc" id="calc-desc"></p>
+                    <button class="calc-btn calc-btn-first" id="calc-btn-first">1</button>
+                    <button class="calc-btn calc-btn-sec" id="calc-btn-sec">2</button>
+                    <button class="calc-btn calc-btn-third" id="calc-btn-third">3</button>
+                    <button class="calc-btn calc-btn-plus" id="calc-btn-plus">+</button>
+                    <button class="calc-btn calc-btn-fourth" id="calc-btn-fourth">4</button>
+                    <button class="calc-btn calc-btn-fifth" id="calc-btn-fifth">5</button>
+                    <button class="calc-btn calc-btn-sixth" id="calc-btn-sixth">6</button>
+                    <button class="calc-btn calc-btn-minus" id="calc-btn-minus">-</button>
+                    <button class="calc-btn calc-btn-seventh" id="calc-btn-seventh">7</button>
+                    <button class="calc-btn calc-btn-eighth" id="calc-btn-eighth">8</button>
+                    <button class="calc-btn calc-btn-nineth" id="calc-btn-nineth">9</button>
+                    <button class="calc-btn calc-btn-multyply" id="calc-btn-multyply">*</button>
+                    <button class="calc-btn calc-btn-round" id="calc-btn-round">Round</button>
+                    <button class="calc-btn calc-btn-enter" id="calc-btn-enter">Enter</button>
+                    <button class="calc-btn calc-btn-diving" id="calc-btn-diving">/</button>
+                    <button class="calc-btn calc-btn-decrimal" id="calc-btn-decrimal">decimal</button>
+                    <button class="calc-btn calc-btn-sqr" id="calc-btn-sqr">√</button>
+                    <button class="calc-btn calc-btn-C" id="calc-btn-C">C</button>
+                    <button class="calc-btn calc-btn-string" id="calc-btn-string">To string</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./js/script.js" type="module"></script>
+</body>
+</html>
